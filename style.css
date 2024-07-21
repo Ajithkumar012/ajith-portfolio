@@ -1,0 +1,108 @@
+.Toggle-icon{
+    color: aliceblue;
+}
+
+.nav-link{
+    color: aliceblue;
+    padding: 0.5rem;
+    position: relative;
+    text-decoration: none;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: aqua;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all .3s ease;
+    bottom: 0;
+    left: 0;
+    color: aqua;
+}
+
+.nav-link:hover::before{
+    transform: scaleX(1);
+    color: aqua;
+}
+.nav-link:hover {
+    color: aqua; /* Add this line to change the text color on hover */
+}
+.Home-section{
+    height: 100vh;
+}
+.profile-section{
+    margin-top: 100px;
+    background-image: linear-gradient(to top, #1a1a1a 0%, #040404 52%, #4e4e4e 100%);
+    
+}
+
+   
+.profile-img{
+    border-radius: 50%;
+}
+.Home-section{
+    background-image: url('./assects/123.jpg');
+    background-size: cover;
+    padding: 150px 0px;
+}
+.About-section{
+    height: 75%;
+}
+.Skills-section{
+    
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.Contact-Me{
+    height: 100%;
+}
+.skills-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border: 2px solid #060605;
+}
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .my-self-container{
+    width: 70%;
+    animation: box;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    transform-origin: left;
+  }
+
+  /* @keyframes box{
+    from{
+        transform: scaleX(-5);
+    }
+    to{
+        
+    }
+  } */
